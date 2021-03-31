@@ -1,0 +1,27 @@
+body{
+    text-align: center;
+    background-image: url("../img/imgonline-com-ua-Resize-m50n013a9p3.png");
+}
+
+input
+{
+    height: 25px;
+}
+
+button
+{
+    height: 30px;
+}
+
+.MyClass{
+    left: 35%;
+    width: 30%;
+    position: relative;
+    margin-top: 300px;
+}
+
+.BIGTETRIS
+{
+    font-size: 150px;
+    color: white;
+}

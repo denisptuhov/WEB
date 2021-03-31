@@ -1,0 +1,74 @@
+<html><head><style>*{
+  font-family: "Georgia", serif;
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}.link
+{
+  display: inline-block;
+  background-color: #050505;
+  color: #f6f5f5;
+  border-radius: 3px;
+  text-decoration: none;
+  width: 70px;
+  height: 22px;
+  text-align: center;
+  cursor: pointer;
+}table
+{
+  position: relative;
+  float: left;
+  margin-top: 20px;
+}
+
+td
+{
+  text-align: center;
+  width: 300px;
+  height: 70px;
+  font-size: 17px;
+}
+
+
+.topBlock
+{
+  height: 80px;
+
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,81,121,1) 0%, rgb(0, 212, 255) 100%);
+
+  text-align: center;
+  font-size: 30px;
+
+  padding: 30px;
+}
+
+h1
+{
+  font-family: "English Rose";
+}
+
+.leftBlock
+{
+  height: 866px;
+  width: 200px;
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgb(0, 212, 255) 0%, rgba(9,81,121,1) 100%);
+
+  position: relative;
+  float: left;
+  text-align: center;
+}</style></head><body><div class="topBlock"><h1>Participants</h1></div><div class="leftBlock"></div><table border="0"><tr><td>Егор Герасимов</td><td>54999</td><td><a class="edit link" href="participants/edit/1">Edit</a></td><td><div class="delete link 1">Delete</div></td></tr><tr><td>$A$HA</td><td>150</td><td><a class="edit link" href="participants/edit/2">Edit</a></td><td><div class="delete link 2">Delete</div></td></tr><tr><td>ЛеХХХа</td><td>150000</td><td><a class="edit link" href="participants/edit/3">Edit</a></td><td><div class="delete link 3">Delete</div></td></tr><tr><td>Петрович</td><td>1</td><td><a class="edit link" href="participants/edit/4">Edit</a></td><td><div class="delete link 4">Delete</div></td></tr><td><a class="create link" href="/participants/create">Create</a></td></table></body><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script>$(document).ready(() => {
+    let deleteButtons = $(".delete")
+    for (let i = 0; i < deleteButtons.length; ++i)
+    {
+        $(deleteButtons[i]).click(() =>{
+            $.get(`/participants/delete/${i + 1}`)
+            document.location.reload()
+        })
+    }
+})</script></html>

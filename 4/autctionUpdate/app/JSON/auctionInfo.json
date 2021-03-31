@@ -1,0 +1,56 @@
+{
+  "participants" : {
+  },
+
+  "auctionImg" : {
+    "0" :
+    {
+      "Url" : "https://cdn21.img.ria.ru/images/155173/11/1551731184_420:0:6720:3544_600x0_80_0_0_38a8b523dd39cfbecb21d31d7e645a17.jpg",
+      "Name" : "Булаки на волге",
+      "minPrice" : "20000",
+      "curPrice" : "20000",
+      "startTime" : "Nov 16, 2020 15:03:00",
+      "endTime" : "Nov 16, 2020 15:03:30",
+      "who" : "none"
+    },
+
+    "1" : {
+      "Name" : "American Gothic",
+      "Url" : "https://pbs.twimg.com/media/Dsq0MePV4AALMQX.jpg",
+      "minPrice": "20000",
+      "curPrice" : "20000",
+      "startTime" : "Nov 16, 2020 15:03:30",
+      "endTime" : "Nov 16, 2020 15:04:00",
+      "who" : "none"
+    },
+    "2" : {
+      "Name" : "The girl with a pearl earring",
+      "Url" : "https://en.bcdn.biz/Images/2020/4/5/87dacfe5-4e5d-4f3b-a61f-9267764e9bf0.jpg",
+      "minPrice": "20000",
+      "curPrice": "20000",
+      "startTime" : "Nov 16, 2020 15:04:00",
+      "endTime" : "Nov 16, 2020 15:04:30",
+      "who" : "none"
+    },
+    "3" : {
+      "Name" : "Impression sunrise",
+      "Url" : "https://impressionistarts.com/static/ff66a827301852293cefe3b7d5f1577b/14b42/claude-monet-impression-sunrise.jpg",
+      "minPrice": "20000",
+      "curPrice": "20000",
+      "startTime" : "Nov 16, 2020 15:04:30",
+      "endTime" : "Nov 16, 2020 15:05:00",
+      "who" : "none"
+    }
+  },
+
+  "alreadySold" :
+  {
+  },
+
+
+  "startTime" : "Nov 16, 2020 15:03:00",
+  "endTime" : "Nov 16, 2020 15:05:30",
+  "adminKey" : "denya",
+  "userKey" : "ne denya",
+  "curImgInd" : "1"
+}

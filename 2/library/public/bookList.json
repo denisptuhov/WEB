@@ -1,0 +1,26 @@
+{
+    "1": {
+        "Author": "Author4",
+        "Name": "Name4",
+        "ReleaseDate": "2004-04-04",
+        "InLibrary": false,
+        "BackInLibraryDate": "0012-12-12",
+        "Who": "10"
+    },
+    "2": {
+        "Author": "yy",
+        "Name": "nebgibskg",
+        "ReleaseDate": "2020-12-05",
+        "InLibrary": false,
+        "BackInLibraryDate": "2020-11-06",
+        "Who": "1213"
+    },
+    "3": {
+        "Author": "12",
+        "Name": "12",
+        "ReleaseDate": "0012-12-12",
+        "InLibrary": true,
+        "BackInLibraryDate": "",
+        "Who": ""
+    }
+}

@@ -1,0 +1,77 @@
+html
+    style
+        include ../public/css/Global.css
+        include ../public/css/main.css
+        include ../public/css/modal.css
+        include  ../public/css/form.css
+    head
+        meta(charset="utf-8")
+        title Library
+    body
+        div(class="overlay" id="overlay")
+
+        div(class="modal" id="takeModal")
+            form(id="modalForm" method="post")
+                div(class="mainDiv")
+                    h3 Введите данные
+                    p
+                    label Имя
+                    input(name="Who" class="Who" required="True")
+
+                    p
+                    label Дата возврата
+                    input(name="BackInLibraryDate" class="BackInLibraryDate" type="date" required="True")
+
+                    p
+                    input(type="submit" value="Сохранить" id="modalSave")
+
+
+        div(class="MainList")
+            h1(class="LibraryHeader") Библиотека
+            table(border="0")
+                tr
+                    th Автор
+                    th Название
+                    th Дата выпуска
+                    th Наличие
+                    th Дата возврата
+                    th Пользователь
+                    th(class="RedBut")
+                    th(class="DelBut")
+                tr
+
+                -var n = 1;
+                while n <= Object.keys(library).length
+                    tr
+                        td=library[n.toString()]["Author"]
+                        td=library[n.toString()]["Name"]
+                        td=library[n.toString()]["ReleaseDate"]
+
+                        if library[n.toString()]["InLibrary"]
+                            td="В библиотеке"
+                            td=""
+                            td=""
+                        else
+                            td="Нет в наличии"
+                            td=library[n.toString()]["BackInLibraryDate"]
+                            td=library[n.toString()]["Who"]
+
+                        td
+                            a(href="/edit/" + n.toString() class="edit link") Edit
+                        td
+                            if library[n.toString()]["InLibrary"]
+                                div(class="take link " + n.toString()) Take
+                        td
+                            div(class="delete link") Delete
+
+                        - ++n;
+
+            a(href="/create" class="create link") Create
+            div(class="dropdown")
+                div(class="dropbtn link") Sort
+                div(id="myDropdown" class="dropdown-content")
+                    div(class="Sort" id="dateSort") По дате возврата
+                    div(class="Sort" id="inSort") По наличию
+    script
+        include ../js/sys.js
+

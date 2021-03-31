@@ -1,0 +1,22 @@
+html
+    style
+        include ../public/css/Global.css
+        include ../public/css/form.css
+
+    h3 Введите данные:
+    form(action="/" method="post")
+        div(class="mainDiv")
+            p
+            label Автор
+            input(name="BookAuthor" class="AuthorInput" required="True" )
+
+            p
+            label Название
+            input(name="BookName" class="NameInput" required="True")
+
+            p
+            label Дата выпуска
+            input(name="BookReleaseDate" class="ReleaseDateInput" type="date" required="True")
+
+            p
+            input(type="submit" value="Сохранить")

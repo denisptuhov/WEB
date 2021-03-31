@@ -1,0 +1,93 @@
+img
+{
+    margin-top: 40px;
+}
+
+h2
+{
+    margin-top: 50px;
+}
+
+.Money
+{
+    font-size: 40px;
+    padding-bottom: 100px;
+}
+
+.slider
+{
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 200px;
+    background-color: black;
+}
+
+label, input
+{
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+}
+
+input
+{
+    margin-left: 10px;
+    border: 0;
+}
+
+#noMoney
+{
+    display: none;
+}
+
+#noMoreImages
+{
+    display: none;
+}
+
+.infoBlock
+{
+    text-align: left;
+    margin-left: 650px;
+}
+
+.emptyBottomBlock
+{
+    height: 100px;
+}
+
+.updateLink
+{
+    display: inline-block;
+    border: 3px inset black;
+    border-radius: 3px;
+    text-decoration: none;
+    width: 170px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+
+    margin-top: 20px;
+}
+
+.logHeader
+{
+    margin-top: 40px;
+}
+
+.log
+{
+    margin-left: 550px;
+    width: 800px;
+    margin-top: 30px;
+}
+
+.timer
+{
+    width: 150px;
+}

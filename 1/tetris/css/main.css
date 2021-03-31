@@ -1,0 +1,37 @@
+body
+{
+    background-image: url("../img/imgonline-com-ua-Resize-m50n013a9p3.png");
+}
+
+.FULL
+{
+    margin-left: 770px;
+    margin-top:  220px;
+}
+
+
+.Info {
+    width: 300px;
+    float: left;
+}
+
+.PlayerClass, .ScoreClass, .NextClass, .LevelClass
+{
+    color: white;
+    margin-top: 25px;
+}
+
+.NextFigureClass
+{
+    position: relative;
+    margin-top:  30px;
+    margin-left: 60px;
+}
+
+.GAMEOVER
+{
+    font-size: 75px;
+    color: white;
+    text-align: center;
+}
+

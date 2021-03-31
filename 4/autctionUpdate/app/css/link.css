@@ -1,0 +1,13 @@
+.link {
+    display: inline-block;
+    border: 3px inset black;
+    border-radius: 3px;
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    padding-top: 10px;
+    font-weight: bold;
+}

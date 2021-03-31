@@ -1,0 +1,20 @@
+{
+    "1": {
+        "Url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg/350px-The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg",
+        "Name": "Тайная вечеряяяя",
+        "Author": "Леонардо да Винчи",
+        "Description": "Монументальная роспись работы Леонардо да Винчи, изображающая сцену последней трапезы Христа со своими учениками.",
+        "StartPrice": "10002",
+        "MinRate": "-1100",
+        "MaxRate": "2500"
+    },
+    "2": {
+        "Url": "https://pics.livejournal.com/real_buk/pic/0000482r/s320x240",
+        "Name": "Утро в сосновом бору",
+        "Author": "Иван Шишкин",
+        "Description": "Работа детально передает состояние природы, увиденное художником на острове Городомля.",
+        "StartPrice": "1000",
+        "MinRate": "1100",
+        "MaxRate": "2000"
+    }
+}

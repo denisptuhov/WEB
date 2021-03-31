@@ -1,0 +1,33 @@
+html
+    head
+        style
+            include ../../css/commonSettings/Global.css
+            include ../../css/commonSettings/link.css
+            include ../../css/participans/participants.css
+            include ../../css/commonSettings/blocks.css
+    body
+
+        div(class="topBlock")
+            h1 Participants
+        div(class="leftBlock")
+
+        table(border="0")
+            - var n = 1;
+            while n <= Object.keys(library).length
+                tr
+                    td=library[n.toString()]["Name"]
+                    td=library[n.toString()]["Money"]
+
+                    td
+                        a(href=`/participants/edit/${n}` class="edit link") Edit
+                    td
+                        div(class="delete link " + n.toString()) Delete
+
+                    - ++n;
+
+            td
+                a(href="/participants/create" class="create link") Create
+
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+    script
+        include ../../js/sys.js

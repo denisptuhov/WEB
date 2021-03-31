@@ -1,0 +1,13 @@
+input
+{
+    margin-left: 10px;
+    border: 0;
+}
+
+label, input
+{
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+}

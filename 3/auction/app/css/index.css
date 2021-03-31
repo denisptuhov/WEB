@@ -1,0 +1,45 @@
+.centerBlock {
+  height: 866px;
+}
+.paintingBlock {
+  margin-top: 30px;
+  margin-left: 70px;
+  width: 400px;
+  height: 400px;
+  float: left;
+  text-align: center;
+}
+.AuthorHeader {
+  margin-top: 10px;
+}
+.DescriptionHeader {
+  margin-top: 30px;
+}
+.participantsHref {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-style: solid;
+  border-radius: 3px;
+  margin-top: 100px;
+  display: inline-block;
+  width: 190px;
+  border-color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.auctionSettingsHref {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-style: solid;
+  border-radius: 3px;
+  margin-top: 10px;
+  display: inline-block;
+  width: 190px;
+  border-color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.editPaintingHref {
+  font-size: 25px;
+  font-weight: bold;
+}

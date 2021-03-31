@@ -1,0 +1,62 @@
+html
+    head
+        style
+            include ../css/Global.css
+            include ../css/link.css
+            include ../../../jquery-ui/jquery-ui/css/cupertino/jquery-ui-1.10.4.custom.min.css
+            include ../css/user.css
+
+
+    body
+        h1(id="userName")
+        h2(class="Money" id="userMoney")="Ca$h: 1000000"
+
+        h2(id="MainHeader" class="MainHeader") Текущая картина
+        h2(id="noMoreImages") Все картины распроданы!
+        img(id="img" src=curImg["Url"])
+
+        div(class="log" id="accordion")
+            h3 Информация о времени
+            div
+                label(for="auctionTimer") Окончание аукциона через:
+                input(id="auctionTimer" class="timer" readonly)
+                br
+
+                label(for="curImgTimer") Окончание торгов по картине через:
+                input(id="curImgTimer" class="timer" readonly)
+            h3 Информация о текущей цене
+            div
+                label(id="curPrice")="Наибольшая ставка: " + curImg["curPrice"]
+            h3 Информация о торгах
+            div(id="logDiv")
+
+
+        div(class="infoBlock" id="infoBlock")
+            form(id="raiseForm")
+                label(for="amount") Ваша ставка:
+                input(name="newPrice" id="amount" readonly)
+
+                div(id="slider" class="slider")
+                input(type="submit" class="updateLink" value="Повысить")
+        label(id="noMoney") Увы у вас недостаточно денег для повышения ставки
+
+
+
+        div(class="emptyBottomBlock")
+            label(id="auctionEndTime" class="jQuerySrc")=info["endTime"]
+            label(id="curImgEndTime" class="jQuerySrc")=curImg["endTime"]
+            label(id="imgId" class="jQuerySrc")=curImgInd
+
+        div(id="history")
+            h2(class="historyHeader") Ваши покупки:
+
+        div(class="emptyBottomBlock")
+
+
+
+
+        script
+            include ../../../jquery-ui/jquery-ui/js/jquery-1.10.2.js
+            include ../../../jquery-ui/jquery-ui/js/jquery-ui-1.10.4.custom.min.js
+            include ../js/sys.js
+        script(src="/socket.io/socket.io.js")

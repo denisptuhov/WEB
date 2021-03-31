@@ -1,0 +1,19 @@
+html
+    head
+        style
+            include ../../css/commonSettings/Global.css
+            include ../../css/commonSettings/link.css
+            include ../../css/commonSettings/blocks.css
+            include ../../css/auctionSettings/auctionSettings.css
+    body
+        div(class="topBlock")
+            h1 Info
+        div(class="leftBlock")
+
+        h3=`Дата проведения: ${library["date"]}`
+        h3=`Время проведения: ${library["time"]}`
+        h3=`Таймаут продажи картины: ${library["timeout"]} минут`
+        h3=`Интервал времени отсчета до окончания торга по картине: ${library['timeInterval']} минут`
+        h3=`Пауза на изучение информации по картине: ${library["studyingInformationTime"]} минут`
+
+        a(href="/auctionSettings/edit" class="link") Edit

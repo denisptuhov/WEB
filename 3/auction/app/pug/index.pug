@@ -1,0 +1,23 @@
+html
+    head
+        style
+            include ../css/commonSettings/Global.css
+            include ../css/index.css
+            include ../css/commonSettings/blocks.css
+    body
+        div(class="topBlock")
+            h1 Auction
+        div(class="leftBlock")
+            a(href="/participants" class="participantsHref") Список участников
+            br
+            a(href="/auctionSettings" class="auctionSettingsHref") Настройки ауциона
+        div(class="centerBlock")
+            - var n = 1;
+            while n <= Object.keys(library).length
+                div(class="paintingBlock")
+                    img(src=library[n.toString()]["Url"] width="350px" height="300px")
+                    br
+                    a(href=`/painting/${n}` class="editPaintingHref")=library[n.toString()]["Name"]
+                    h2(class="AuthorHeader")=library[n.toString()]["Author"]
+                    h4(class="DescriptionHeader")=library[n.toString()]["Description"]
+                - ++n

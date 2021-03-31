@@ -1,0 +1,31 @@
+html
+    style
+        include ../css/commonSettings/Global.css
+        include ../css/editPainting.css
+
+    h3 Введите данные
+
+    form(action="/painting/" + name method="post")
+        div(class="mainDiv")
+            p
+            label Имя
+            input(value=library["Name"] name="PaintingName" class="NameInput" required="True")
+
+            p
+            label Автор
+            input(value=library["Author"] name="PaintingAuthor" class="AuthorInput" required="True")
+
+            p
+            label Начальная цена
+            input(value=library["StartPrice"] name="PaintingStartPrice" class="StartPriceInput" type="number" required="True")
+
+            p
+            label Минимальный шаг
+            input(value=library["MinRate"] name="PaintingMinRate" class="MinRateInput" type="number" required="True")
+
+            p
+            label Максимальный шаг
+            input(value=library["MaxRate"] name="PaintingMaxRate" class="MaxRateInput" type="number" required="True")
+
+            p
+            input(type="submit" value="Сохранить")

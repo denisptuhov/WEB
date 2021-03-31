@@ -1,0 +1,33 @@
+input, label
+{
+    margin-top: 10px;
+}
+
+.AuthorInput
+{
+    width: 142px;
+    margin-left: 67px;
+}
+
+.NameInput
+{
+    width: 142px;
+    margin-left: 39px
+}
+
+.ReleaseDateInput
+{
+    margin-left: 10px;
+}
+
+.mainDiv
+{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+h3
+{
+    margin-left: 20px;
+    margin-top: 30px;
+}

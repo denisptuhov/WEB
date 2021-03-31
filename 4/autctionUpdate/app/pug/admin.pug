@@ -1,0 +1,48 @@
+html
+    head
+        style
+            include ../css/admin.css
+            include  ../css/Global.css
+            include ../css/link.css
+    body
+        h1 Info
+
+        h2(class="MainHeader") Участники
+
+        div(class="centerTable" align="center")
+            table(border="10")
+                -var n = 0;
+                while n < Object.keys(library["participants"]).length
+                    tr
+                        td=library["participants"][n.toString()]["Name"]
+                        td=library["participants"][n.toString()]["Money"]
+
+                        - ++n;
+
+        h2 Картины
+        div(class="images" align="center")
+            -var n = 0;
+            -var cur = new Date().getTime()
+
+            while n < Object.keys(library["auctionImg"]).length
+                img(src=library["auctionImg"][n.toString()]["Url"])
+
+                if cur >= new Date(library["auctionImg"][n.toString()]["startTime"]).getTime() && cur < new Date(library["auctionImg"][n.toString()]["endTime"]).getTime()
+                    h2 Торги по данной картине идут сейчас
+                    h2="Начальная цена: " + library["auctionImg"][n.toString()]["minPrice"]
+                    h2="Текущая цена: " + library["auctionImg"][n.toString()]["curPrice"]
+                    h2="Лидирует: " + library["auctionImg"][n.toString()]["who"]
+
+                else if cur < new Date(library["auctionImg"][n.toString()]["startTime"]).getTime()
+                    h2 Торги по данной картине начнутся позже
+                else
+                    h2 Торги по данной картине окончены
+                    if library["auctionImg"][n.toString()]["who"] === "none"
+                        h2 Картина не была куплена
+                    else
+                        h2="Покупатель: " + library["auctionImg"][n.toString()]["who"]
+                        h2="Цена покупки: " + library["auctionImg"][n.toString()]["curPrice"]
+                - ++n;
+        div(class="emptyBottom")
+
+

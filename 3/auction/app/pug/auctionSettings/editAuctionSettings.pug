@@ -1,0 +1,36 @@
+html
+    style
+        include ../../css/commonSettings/Global.css
+        include ../../css/auctionSettings/editAuctionSettings.css
+
+    h3 Введите данные
+
+    form(action="./edit" method="post")
+        div(class="mainDiv")
+            p
+            label Дата проведения
+            input(value=library["date"] name="auctionSettingsDate"
+                class="dateInput" type="date" required="True")
+
+            p
+            label Время проведения
+            input(value=library["time"] name="auctionSettingsTime"
+                class="timeInput" type="time" required="True")
+
+            p
+            label Таймаут продажи картины:
+            input(value=library["timeout"] name="auctionSettingsTimeout"
+                class="timeoutInput" type="number" required="True")
+
+            p
+            label Интервал времени отсчета до окончания торга по картине:
+            input(value=library["timeInterval"] name="auctionSettingsTimeInterval"
+                class="TimeIntervalInput" type="number" required="True")
+
+            p
+            label Пауза на изучение информации по картине:
+            input(value=library["studyingInformationTime"] name="auctionSettingsStudying"
+                class="StudyingInput" type="number" required="True")
+
+            p
+            input(type="submit" value="Сохранить")

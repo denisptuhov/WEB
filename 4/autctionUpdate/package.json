@@ -1,0 +1,26 @@
+{
+  "name": "wweeebbb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "flow": "^0.2.3",
+    "jquery": "^3.5.1",
+    "jquery-ui": "^1.12.1",
+    "pug": "^3.0.0",
+    "socket.io": "^3.0.0",
+    "socket.io-client": "^3.0.0",
+    "webpack": "^5.4.0"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.137.0"
+  }
+}

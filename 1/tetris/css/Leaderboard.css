@@ -1,0 +1,23 @@
+body
+{
+    background-image: url("../img/imgonline-com-ua-Resize-m50n013a9p3.png");
+}
+
+th, td
+{
+    color: white;
+}
+
+table
+{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 300px;
+    height: 300px
+}
+
+caption
+{
+    font-size: 30px;
+    color: white;
+}

@@ -1,0 +1,19 @@
+html
+    style
+        include ../../css/commonSettings/Global.css
+        include ../../css/participans/participantChanges.css
+
+    h3 Введите данные
+
+    form(action="/participants/create" method="post")
+        div(class="mainDiv")
+            p
+            label Имя
+            input(name="ParticipantName" class="NameInput" required="True")
+
+            p
+            label Запас денежных средств
+            input(name="ParticipantMoney" class="MoneyInput" required="True")
+
+            p
+            input(type="submit" value="Создать")

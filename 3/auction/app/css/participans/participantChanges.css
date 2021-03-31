@@ -1,0 +1,14 @@
+h3 {
+  margin: 20px;
+}
+.mainDiv {
+  margin-left: 30px;
+}
+label,
+input {
+  margin-top: 10px;
+}
+.NameInput,
+.MoneyInput {
+  margin-left: 10px;
+}

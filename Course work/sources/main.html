@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Started page</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        </canvas>
+        <script src="js/mapManager.js"></script>
+        <script src="js/spriteManager.js"></script>
+        <script src="js/entities.js"></script>
+        <script src="js/soundManager.js"></script>
+        <script src="js/physicManager.js"></script>
+        <script src="js/eventsManager.js"></script>
+        <script src="js/gameManager.js"></script>
+        <p><input type="button" value="Начать игру" id="start" onclick="loadGame()"></p>
+
+        <p><input type="radio" value="1" name="level" id="level1" checked> <label for="level1" class="hi">Level 1</label></p>
+
+        <p><input type="radio" value="2" name="level" id="level2"> <label for="level2" class="hi">Level 2</label></p>
+
+        <h3>Таблица рекордов</h3>
+        <table>
+            <tr><td>Username</td><td>Score</td></tr>
+            <tr><td id="Table1"></td><td id="Table2"></td></tr>
+            <tr><td id="Table3"></td><td id="Table4"></td></tr>
+            <tr><td id="Table5"></td><td id="Table6"></td></tr>
+        </table>
+
+        <p class='info' id="counter"></p>
+        <canvas align ="center" id="canvasid" width="240" height="400"></canvas>
+
+        <script>
+            let canvas = document.getElementById("canvasid");
+            let ctx = canvas.getContext("2d");
+
+            function loadGame()
+            {
+                let ind
+                let levels = document.getElementsByName("level")
+                for (let i = 0; i < levels.length; ++i) {
+                    if (levels[i].checked) {
+                        ind = i + 1
+                        break
+                    }
+                }
+                gameManager.reload(`maps/tilemap${ind}.json`)
+                gameManager.play()
+
+                levels.forEach(function (e)
+                {
+                    e.disabled = true
+                })
+                document.getElementById("start").disabled = true
+            }
+        </script>
+    </body>
+</html>

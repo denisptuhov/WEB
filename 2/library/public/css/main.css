@@ -1,0 +1,99 @@
+body
+{
+    background: linear-gradient(180deg, rgb(234, 77, 77), rgb(236, 186, 186));
+}
+
+.MainList
+{
+    margin-left: 21%;
+    background: #efd8dc;
+    height: 100%;
+    width: 1050px;
+}
+
+.LibraryHeader
+{
+    font-size: 50px ;
+    font-weight: normal;
+    font-family: "English Rose";
+    color: #255170;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.link
+{
+    display: inline-block;
+    background-color: #050505;
+    color: #f6f5f5;
+    border-radius: 3px;
+    text-decoration: none;
+    width: 70px;
+    height: 22px;
+    text-align: center;
+    cursor: pointer;
+}
+
+table
+{
+    margin-top: 80px;
+}
+
+th
+{
+    text-align: center;
+    width: 150px;
+    height: 70px;
+    font-size: 19px;
+}
+
+td
+{
+    text-align: center;
+    width: 150px;
+    height: 70px;
+    font-size: 17px;
+}
+
+.CreateButton
+{
+    margin-left: 30px;
+    width: 70px;
+    height: 20px;
+}
+
+.create
+{
+    margin-left: 14px;
+    margin-top: 10px;
+}
+
+.dropbtn
+{
+    margin-left: 44px;
+}
+
+.dropdown
+{
+    display: inline-block;
+}
+
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    margin-left: 40px;
+}
+
+.dropdown-content div
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {display: block;}

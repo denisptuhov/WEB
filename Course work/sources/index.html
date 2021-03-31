@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>authorization</title>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <table>
+    <tr>
+        <td>Введите Ваше имя</td>
+        <td><input id="username" type="text" name="login"></td>
+    </tr>
+    </table>
+    <p><input type="button" value="Далее" onclick="nameToLocal();goToIndex();"></p>
+    <script>
+        function nameToLocal(){
+            let username = document.getElementById("username").value;
+            localStorage.setItem("username", username);
+        }
+        function goToIndex(){
+            window.location = "main.html";
+        }
+    </script>
+</body>
+</html>
